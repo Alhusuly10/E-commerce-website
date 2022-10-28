@@ -2,32 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Document</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;1,300;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="header">
       <div class="container">
       <div class="navbar">
-        <div class="logo">devZane</div>
+        <div class="logo">
+         <img src="images/ecomerce_logo-removebg-preview.png" alt="" width="200px" height="110px">
+        </div>
       </div>
       <nav>
-        <ul>
+        <ul id="menuItems">
           <li><a href="#">home</a></li>
           <li><a href="#">products</a></li>
           <li><a href="#">about</a></li>
           <li><a href="#">contact</a></li>
           <li><a href="#">account</a></li>
         </ul>
+        <img src="images/cart.png" width="30px" height="33px" class="cart" style="margin-top: -0.1px;" >
+        <img src="images/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
       </nav>
-      <img src="images/cart.png" alt="" width="30px" height="40px" class="cart">
+      
       </div>
       
     <div class="row">
@@ -37,7 +39,7 @@
             <a href="#" class="btn">Loremsum  &#8594</a> 
         </div>
         <div class="col-2">
-            <img src="images/image1.png" alt="">
+            <img src="images/image1.png">
         </div>
         </div>
       </div>
@@ -46,15 +48,17 @@
 
 
   <!----- featured categories ------->
+
+
   <div class="categories">
     <div class="small-container">
       <div class="new-row">
         <div class="col-3">
           <img src="images/category-3.jpg" alt="">
         </div>
-        <div class="col-3"><img src="images/category-2.jpg" alt="">
+        <div class="col-3"><img src="images/category-2.jpg">
         </div>
-        <div class="col-3"><img src="images/category-1.jpg" alt="">
+        <div class="col-3"><img src="images/category-1.jpg">
         </div>
       </div>
     </div>
@@ -62,57 +66,292 @@
 
   <!---- featured products -->
   <div class="small-container">
-    <h2>Featured Products</h2>
+    <h2 class="title">Featured Products</h2>
   <div class="new-row">
     
     <div class="col-4">
-      <img src="images/product-3.jpg" alt="">
+      <img src="images/product-3.jpg">
       <h4>Lorem ipsum dolor sit amet.</h4>
       <div class="rating">
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
-      <i class="fa fa-star"></i>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-half checked"></span>
+        <span class="fa fa-star"></span>
       </div>
       <p>$30.00</p>
     </div> 
     <div class="col-4">  
-      <img src="images/product-1.jpg" alt="">
+      <img src="images/product-1.jpg">
       <h4>Lorem sit amet consectetur.</h4>
       <div class="rating">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        </div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
 
       <p>$50.00</p>
     </div>
     <div class="col-4">
-      <img src="images/product-2.jpg" alt="">
-      <i class="fa fa-star"></i>
+      <img src="images/product-2.jpg">
       <h4>Lorem, ipsum dolor.</h4>
       <div class="rating">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        </div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star"></span>
+      </div>
       <p>$30.00</p>
     </div>
     <div class="col-4">
-      <img src="images/product-4.jpg" alt="">
+      <img src="images/product-4.jpg">
       <h4>Lorem ipsum dolor sit.</h4>
       <div class="rating">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        </div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+      </div>
 
       <p>$50.00</p>
     </div>
   </div>
+  <h2 class="title">New Products</h2>
+  <div class="new-row">
+    
+    <div class="col-4">
+      <img src="images/product-7.jpg">
+      <h4>Lorem ipsum dolor sit amet.</h4>
+      <div class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-half checked"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <p>$30.00</p>
+    </div> 
+    <div class="col-4">  
+      <img src="images/product-5.jpg">
+      <h4>Lorem sit amet consectetur.</h4>
+      <div class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+      </div>
+
+      <p>$50.00</p>
+    </div>
+    <div class="col-4">
+      <img src="images/product-6.jpg">
+      <h4>Lorem, ipsum dolor.</h4>
+      <div class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <p>$30.00</p>
+    </div>
+    <div class="col-4">
+      <img src="images/product-8.jpg">
+      <h4>Lorem ipsum dolor sit.</h4>
+      <div class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-half checked"></span>
+      </div>
+
+      <p>$50.00</p>
+    </div>
+    <div class="new-row">
+    
+      <div class="col-4">
+        <img src="images/product-10.jpg">
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <div class="rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star-half checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <p>$30.00</p>
+      </div> 
+      <div class="col-4">  
+        <img src="images/product-9.jpg">
+        <h4>Lorem sit amet consectetur.</h4>
+        <div class="rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+  
+        <p>$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-12.jpg">
+        <h4>Lorem, ipsum dolor.</h4>
+        <div class="rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <p>$30.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-11.jpg">
+        <h4>Lorem ipsum dolor sit.</h4>
+        <div class="rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+  
+        <p>$50.00</p>
+      </div>
+    </div>
+  </div>
 </div>
+     <!--offer-->
+     <div class="offer">
+      <div class="small-container">
+        <div class="row exclusive">
+          <div class="col-2">
+          <img src="images/exclusive.png" class="offer-image">
+        </div>
+          <div class="col-2">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, facilis.</p>
+          <h1>Lorem, ipsum dolor.</h1>
+          <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eius eveniet illo at quibusdam dignissimos sint vero, hic animi? Harum ipsa fuga laboriosam placeat dolore earum inventore officia, similique saepe.</p><br>
+          <a href="#" class="btn">Buy now &#8594;</a>
+        </div>
+        </div>
+      </div>
+     </div>
+
+     <!--testimoinal section-->
+     <div class="testimonial">
+      <div class="small-container">
+        <div class="row testimonial-row">
+        <div class="col-3">
+          <span class="fa fa-quote-left checked"></span>
+          <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odio quo dolore est molestiae hic nisi odit dolores iste dignissimos? Sapiente doloremque eaque cupiditate nemo ut accusamus voluptates impedit</p>
+          <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <img src="images/user-3.png" alt="">
+          <h2>paul Drink</h2>
+        </div> 
+        <div class="col-3">
+          <span class="fa fa-quote-left checked"></span>
+          <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odio quo dolore est molestiae hic nisi odit dolores iste dignissimos? Sapiente doloremque eaque cupiditate nemo ut accusamus voluptates impedit</p>
+          <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <img src="images/user-1.png" alt="">
+          <h2>Sul hamed</h2>
+        </div>
+        <div class="col-3">
+          <span class="fa fa-quote-left checked"></span>
+          <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odio quo dolore est molestiae hic nisi odit dolores iste dignissimos? Sapiente doloremque eaque cupiditate nemo ut accusamus voluptates impedit</p>
+          <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <img src="images/user-2.png" alt="">
+          <h2>john smith</h2>
+        </div>
+      </div>
+      </div>
+      </div>
+     </div>
+
+     <div class="brands">
+        <div class="small-container">
+          <div class="row testimonial-row">
+            <div class="col-5">
+              <img src="images/logo-godrej.png" alt="">
+            </div>
+            <div class="col-5">
+              <img src="images/logo-philips.png" alt="">
+            </div>
+            <div class="col-5">
+              <img src="images/logo-paypal.png" alt="">
+            </div>
+            <div class="col-5">
+              <img src="images/logo-coca-cola.png" alt="">
+            </div>
+            <div class="col-5 testimonial-row">
+              <img src="images/logo-oppo.png" alt="">
+            </div>
+          </div>
+        </div>
+     </div>
+
+     <div class="footer">
+      <div class="container">
+        <div class="row testimonial-row">
+          <div class="footer-col-1">
+            <h3>Download our App</h3>
+            <p class="footer-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, necessitatibus.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="">
+              <img src="images/app-store.png" alt="">
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo-oppo.png" width="180px" height="110px" alt="">
+            <p class="footer-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ducimus provident architecto dolorum eveniet natus.</p>
+          </div>
+          
+          <div class="footer-col-3">
+            <h3>Lorem, ipsum</h3>
+            <ul>
+              <li>coupons</li>
+              <li>Blog posts</li>
+              <li>Return Policy</li>
+              <li>Join affilliates</li>
+            </ul>
+          </div>
+          <div class="footer-col-3">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>YouTube</li>
+        </div>
+        <hr>
+        <p class="copyright"> &#169; Copyright2022 - Alshusuly</p>
+      </div>
+     </div>
+     <script src="script.js"></script>
   </body>
 </html>
