@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Finlandica
+- Font Author: Copyright 2015 The Finlandica Project Authors (https://github.com/HelsinkiTypeStudio/Finlandica)
+- Font Source: http://fonts.gstatic.com/s/finlandica/v5/-nFuOGk-8vAc7lEtg0aS45mfNAn722rq0MXz70e1_CpOtma3uNQ.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

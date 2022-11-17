@@ -8,7 +8,7 @@ body {
 }
 .header {
   background: radial-gradient(rgba(167, 125, 48, 0.8), rgba(255, 69, 0, 0.5));
-  height: 100vh ;
+  /* height: 100vh ; */
 }
 .container {
   width: 100%;
@@ -65,7 +65,7 @@ p {
 .row {
   display: flex;
   align-items: center;
-  margin-top: -300px;
+  /* margin-top: -300px; */
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -191,11 +191,11 @@ h4 {
   background: radial-gradient(rgba(167, 125, 48, 0.8), rgba(255, 69, 0, 0.5));
   margin-top: 80px;
   padding: 30px 0;
-  height: 500px;
+  /* height: 500px; */
 }
 
  .exclusive {
-  margin-top:  -330px; 
+  /* margin-top:  -330px;  */
 }
 
 .small {
