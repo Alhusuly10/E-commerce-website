@@ -5,32 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alshusuly store</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
+    <!-- css -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+
+    <!-- header container -->
     <div class="header">
       <div class="container">
       <div class="navbar">
         <div class="logo">
-         <img src="images/ecomerce_logo-removebg-preview.png" alt="" width="200px" height="110px">
+         <img src="images/alhusuly-logo.png" alt="" width="200px" height="110px">
         </div>
       </div>
       <nav>
         <ul id="MenuItems">
-          <li><a href="#">home</a></li>
-          <li><a href="#">products</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">contact</a></li>
-          <li><a href="#">account</a></li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="product.html">products</a></li>
+          <li><a href="about">about</a></li>
+          <li><a href="contact">contact</a></li>
+          <li><a href="account">account</a></li>
         </ul>
-        <img src="images/cart.png" width="30px" height="33px" class="cart" style="margin-top: -0.1px;" >
-        <img src="images/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
+        <img src="images/cart.png" width="30px" height="33px" class="cart icon" style="margin-top: -0.1px;" >
+        <img src="images/menu.png" alt="menu" class="menu-icon icon" onclick="menutoggle()">
       </nav>
     <div class="row">
         <div class="col-2">
@@ -80,7 +90,7 @@
         <span class="fa fa-star-half checked"></span>
         <span class="fa fa-star"></span>
       </div>
-      <p>$30.00</p>
+      <p class="price">$30.00</p>
     </div> 
     <div class="col-4">  
       <img src="images/product-1.jpg">
@@ -93,7 +103,7 @@
         <span class="fa fa-star"></span>
       </div>
 
-      <p>$50.00</p>
+      <p class="price">$50.00</p>
     </div>
     <div class="col-4">
       <img src="images/product-2.jpg">
@@ -105,7 +115,7 @@
         <span class="fa fa-star "></span>
         <span class="fa fa-star"></span>
       </div>
-      <p>$30.00</p>
+      <p class="price">$30.00</p>
     </div>
     <div class="col-4">
       <img src="images/product-4.jpg">
@@ -118,7 +128,7 @@
         <span class="fa fa-star checked"></span>
       </div>
 
-      <p>$50.00</p>
+      <p class="price">$50.00</p>
     </div>
   </div>
   <h2 class="title">New Products</h2>
@@ -134,7 +144,7 @@
         <span class="fa fa-star-half checked"></span>
         <span class="fa fa-star"></span>
       </div>
-      <p>$30.00</p>
+      <p class="price">$30.00</p>
     </div> 
     <div class="col-4">  
       <img src="images/product-5.jpg">
@@ -147,7 +157,7 @@
         <span class="fa fa-star checked"></span>
       </div>
 
-      <p>$50.00</p>
+      <p class="price">$50.00</p>
     </div>
     <div class="col-4">
       <img src="images/product-6.jpg">
@@ -159,7 +169,7 @@
         <span class="fa fa-star "></span>
         <span class="fa fa-star"></span>
       </div>
-      <p>$30.00</p>
+      <p class="price">$30.00</p>
     </div>
     <div class="col-4">
       <img src="images/product-8.jpg">
@@ -172,7 +182,7 @@
         <span class="fa fa-star-half checked"></span>
       </div>
 
-      <p>$50.00</p>
+      <p class="price">$50.00</p>
     </div>
     <div class="new-row">
     
@@ -186,7 +196,7 @@
           <span class="fa fa-star-half checked"></span>
           <span class="fa fa-star"></span>
         </div>
-        <p>$30.00</p>
+        <p class="price">$30.00</p>
       </div> 
       <div class="col-4">  
         <img src="images/product-9.jpg">
@@ -199,7 +209,7 @@
           <span class="fa fa-star"></span>
         </div>
   
-        <p>$50.00</p>
+        <p class="price">$50.00</p>
       </div>
       <div class="col-4">
         <img src="images/product-12.jpg">
@@ -211,7 +221,7 @@
           <span class="fa fa-star "></span>
           <span class="fa fa-star"></span>
         </div>
-        <p>$30.00</p>
+        <p class="price">$30.00</p>
       </div>
       <div class="col-4">
         <img src="images/product-11.jpg">
@@ -224,11 +234,13 @@
           <span class="fa fa-star checked"></span>
         </div>
   
-        <p>$50.00</p>
+        <p class="price">$50.00</p>
       </div>
     </div>
   </div>
 </div>
+
+
      <!--offer-->
      <div class="offer">
       <div class="small-container">
@@ -246,7 +258,7 @@
       </div>
      </div>
 
-     <!-- testimoinal section-->
+     <!-- Testimoinal section-->
      <div class="testimonial">
       <div class="small-container">
         <div class="row testimonial-row">

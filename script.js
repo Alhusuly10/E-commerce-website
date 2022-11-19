@@ -14,7 +14,7 @@ var i = 0;
 var numbers = '';
 
 while (i < 10) {
-    console.log("it is increment at:" + i);
+    console.log("it is increment at:", + i);
     i++;
 }
 
